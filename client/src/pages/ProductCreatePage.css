@@ -1,0 +1,258 @@
+.product-create-page {
+  min-height: 100vh;
+  background: #f7f7f8;
+  color: #111;
+  font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+}
+
+.product-create-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.product-create-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.back-icon {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  color: #222;
+  font-size: 1.1rem;
+  background: #fff;
+}
+
+.back-icon:hover {
+  background: #fafafa;
+}
+
+.topbar-left h1 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.new-product-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.new-product-button:hover {
+  background: #000;
+}
+
+.product-create-tabs {
+  display: flex;
+  gap: 0.25rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 0;
+}
+
+.tab {
+  padding: 0.7rem 1rem;
+  border-radius: 8px 8px 0 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #777;
+}
+
+.tab.active {
+  color: #111;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-bottom-color: #fff;
+}
+
+.product-create-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem 3rem;
+}
+
+.product-form-card {
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 0 12px 12px 12px;
+  padding: 1.75rem 1.5rem 1.5rem;
+}
+
+.product-form-card > h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+}
+
+.form-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.92rem;
+  outline: none;
+  background: #fff;
+  color: #111;
+  font-family: inherit;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: #222;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 180px;
+}
+
+.file-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.file-row input[type='file'] {
+  display: none;
+}
+
+.file-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #f7f7f7;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0 !important;
+  font-family: inherit;
+  color: #111;
+}
+
+.file-button:hover {
+  background: #efefef;
+}
+
+.file-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.file-name {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.clear-image-button {
+  border: none;
+  background: none;
+  color: #c0392b;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.clear-image-button:hover {
+  text-decoration: underline;
+}
+
+.image-preview {
+  margin-top: 0.85rem;
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.form-error {
+  margin: 1.25rem 0 0;
+  padding: 0.75rem 0.9rem;
+  background: #fff2f2;
+  border: 1px solid #ffd7d7;
+  border-radius: 8px;
+  color: #c0392b;
+  font-size: 0.88rem;
+}
+
+.submit-button {
+  margin-top: 1.5rem;
+  padding: 0.85rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #000;
+}
+
+.submit-button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+@media (max-width: 800px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-create-topbar {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,300 @@
+.admin-page {
+  min-height: 100vh;
+  background: #f7f7f8;
+  color: #111;
+  font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+}
+
+.admin-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.admin-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.admin-intro h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.admin-intro p {
+  margin: 0.5rem 0 0;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.stat-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1.2rem 1.15rem;
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+}
+
+.stat-label {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #777;
+  font-weight: 600;
+}
+
+.stat-value {
+  margin: 0.55rem 0 0;
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.stat-change {
+  margin: 0.4rem 0 0;
+  font-size: 0.78rem;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.stat-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.stat-icon.blue {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.stat-icon.green {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.stat-icon.purple {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+.stat-icon.orange {
+  background: #ffedd5;
+  color: #ea580c;
+}
+
+.admin-panels {
+  display: grid;
+  grid-template-columns: 0.9fr 1.4fr;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  padding: 1.25rem;
+}
+
+.panel h2 {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.panel-header h2 {
+  margin: 0;
+}
+
+.view-all {
+  border: none;
+  background: none;
+  color: #666;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-all:hover {
+  color: #111;
+}
+
+.quick-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.action-primary,
+.action-secondary {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.action-primary {
+  border: none;
+  background: #111;
+  color: #fff;
+}
+
+.action-primary:hover {
+  background: #000;
+}
+
+.action-secondary {
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.action-secondary:hover {
+  background: #fafafa;
+}
+
+.action-icon {
+  width: 18px;
+  height: 18px;
+  color: #666;
+  display: flex;
+}
+
+.action-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.enrollment-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.enrollment-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.95rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.enrollment-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.enrollment-meta strong {
+  display: block;
+  font-size: 0.92rem;
+}
+
+.enrollment-meta span {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.enrollment-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.status-badge.processing {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.status-badge.shipping {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-badge.done {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.amount {
+  font-size: 0.92rem;
+  min-width: 5.5rem;
+  text-align: right;
+}
+
+@media (max-width: 960px) {
+  .stat-grid,
+  .admin-panels {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .stat-grid,
+  .admin-panels {
+    grid-template-columns: 1fr;
+  }
+
+  .enrollment-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .enrollment-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
