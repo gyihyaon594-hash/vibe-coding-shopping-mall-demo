@@ -1,0 +1,42 @@
+{
+  "name": "shopping-mall-demo-api",
+  "description": "Shopping mall demo API server (Node.js + Express + MongoDB)",
+  "keywords": ["node", "express", "mongodb", "shopping-mall"],
+  "success_url": "/health",
+  "env": {
+    "APP_BASE": {
+      "description": "Monorepo subdirectory that contains the Heroku app (package.json, Procfile).",
+      "value": "server"
+    },
+    "MONGODB_ATLAS_URL": {
+      "description": "MongoDB Atlas connection string",
+      "required": true
+    },
+    "JWT_SECRET": {
+      "description": "Secret key used to sign JWT tokens",
+      "required": true
+    },
+    "JWT_EXPIRES_IN": {
+      "description": "JWT expiration time",
+      "value": "1d",
+      "required": false
+    },
+    "PORTONE_API_SECRET": {
+      "description": "PortOne V2 API secret for payment verification",
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/lstoll/heroku-buildpack-monorepo"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
