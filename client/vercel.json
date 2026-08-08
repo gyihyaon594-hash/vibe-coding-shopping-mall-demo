@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://YOUR_HEROKU_APP.herokuapp.com/api/:path*"
+      "destination": "https://vibe-coding-shopping-mall-ba-5ffa0c2a0694.herokuapp.com/api/:path*"
     },
     {
       "source": "/(.*)",
